@@ -5,14 +5,15 @@
         static void Main(string[] args)
         {
             const int doosGrootte = 8;
-            int aantalEieren = 124;
+            double aantalEieren = 124;
 
             Console.WriteLine("Hoeveel dozen heb je?:");
-            int aantalDozen = Console.ReadLine();
+            double aantalDozen = Console.ReadLine();
+
+            double overigeEieren = aantalEieren % aantalDozen;
 
 
-
-            Console.WriteLine($"{aantalEieren} eieren passen in {aantalDozen} dozen van doosgrootte:{doosGrootte}. Daarbij zal je nog 4 eieren over hebben.");
+            Console.WriteLine($"{aantalEieren} eieren passen in {aantalDozen} dozen van doosgrootte:{doosGrootte}. Daarbij zal je nog {overigeEieren} eieren over hebben.");
         }
     }
 }
